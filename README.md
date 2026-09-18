@@ -55,6 +55,7 @@ VibeDroid brings AI conversations and a coding workspace together in a native An
 | **Images** | Open images and screenshots supplied by workspace tools or compatible providers, with fullscreen zoom and pan. |
 | **API choice** | Connect through Anthropic Messages, OpenAI Chat Completions, or Responses with your own Base URL and API key. |
 | **Permission modes** | Choose Ask, Accept edits, Plan, or YOLO to control how agent actions are approved. |
+| **In-app updates** | Get a glass update banner, download the latest official APK, and install it with Android's confirmation. |
 
 ## Get started
 
@@ -75,9 +76,15 @@ For Claude through HadsAI, use **Anthropic Messages** with `https://hadsai.com/v
 
 Download the **VibeDroid.apk** asset from [GitHub Releases](https://github.com/hads-git/Vibedroid-apk/releases). Each release includes its installation notes and APK checksum. The download button above always points to the latest standard release.
 
+**From version 0.2.0**, VibeDroid checks GitHub for stable updates while the app is open. A glowing glass banner appears when a newer version is available. Tap **Download**, then **Install update**; Android confirms installation and may ask to allow VibeDroid to install apps. You can also use **Settings → App → Check for updates**. Downloads are checked against the published SHA-256, package version, device compatibility, and the installed app's signing certificate.
+
+Install 0.2.0 manually if you are upgrading from 0.1.0, which does not contain the updater. Finish active chats and save open files before installing. Successful compatible upgrades preserve your local chats and settings.
+
 Some early builds used different signing certificates. If Android rejects an update because of a signature conflict, preserve your local data and check the release's installation notes before changing the existing installation.
 
 Conversations and agent history are stored on your device. Model requests use the API provider you configure.
+
+**Background account sync**, under **Settings → App**, lets HadsAI attribute account activity to VibeDroid using your existing Profile sign-in. While enabled and the app is open, it makes a limited native account request without displaying or rendering a web page. This request sends no chat content or model API key. It does not identify users who have not signed into Profile; server-side analytics determines how account activity is counted.
 
 ## Follow the project
 
