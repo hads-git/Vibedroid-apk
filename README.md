@@ -78,7 +78,7 @@ Download the **VibeDroid.apk** asset from [GitHub Releases](https://github.com/h
 
 **From version 0.2.0**, VibeDroid checks GitHub for stable updates while the app is open. A glowing glass banner appears when a newer version is available. Tap **Download**, then **Install update**; Android confirms installation and may ask to allow VibeDroid to install apps. You can also use **Settings → App → Check for updates**. Downloads are checked against the published SHA-256, package version, device compatibility, and the installed app's signing certificate.
 
-Install 0.2.0 manually if you are upgrading from 0.1.0, which does not contain the updater. Finish active chats and save open files before installing. Successful compatible upgrades preserve your local chats and settings.
+Install the latest APK manually if you are upgrading from 0.1.0, which does not contain the updater. Finish active chats and save open files before installing. Successful compatible upgrades preserve your local chats and settings.
 
 Some early builds used different signing certificates. If Android rejects an update because of a signature conflict, preserve your local data and check the release's installation notes before changing the existing installation.
 
