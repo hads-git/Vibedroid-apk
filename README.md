@@ -48,13 +48,14 @@ VibeDroid brings AI conversations and a coding workspace together in a native An
 
 | Feature | What you can do |
 | --- | --- |
-| **Chat & history** | Keep conversations in a sidebar, revisit local history, and use layouts made for phones and tablets. |
-| **Coding workspace** | Browse and edit project files, inspect tool results, and run commands in the built-in Linux shell. |
-| **Agent chats** | Follow delegated tasks in separate conversations, send follow-ups, and cancel running agents. Requires a model that supports tools. |
+| **Chat & history** | Keep conversations in a sidebar, revisit local history, and reopen pending questions with your drafted answers intact. |
+| **Coding workspace** | Browse and edit project files, see the command currently running in the built-in Linux shell, and stop an individual operation. |
+| **Agent chats** | Continue using the main chat while delegated tasks run, follow their separate conversations, and revisit grouped finished agents. Requires a model that supports tools. |
+| **Background work** | Keep active tasks running while the app is minimized or the screen is locked, with an ongoing service notification. |
 | **Math & plots** | Read formatted equations, fractions, code, and supported function plots in the conversation. |
 | **Images** | Open images and screenshots supplied by workspace tools or compatible providers, with fullscreen zoom and pan. |
 | **API choice** | Connect through Anthropic Messages, OpenAI Chat Completions, or Responses with your own Base URL and API key. |
-| **Permission modes** | Choose Ask, Accept edits, Plan, or YOLO to control how agent actions are approved. |
+| **Permission modes** | Choose Ask, Accept edits, Plan, or YOLO, and switch modes during a task to control how agent actions are approved. |
 | **In-app updates** | Get a glass update banner, download the latest official APK, and install it with Android's confirmation. |
 
 ## Get started
@@ -83,6 +84,8 @@ Install the latest APK manually if you are upgrading from 0.1.0, which does not 
 Some early builds used different signing certificates. If Android rejects an update because of a signature conflict, preserve your local data and check the release's installation notes before changing the existing installation.
 
 Conversations and agent history are stored on your device. Model requests use the API provider you configure.
+
+Allow notifications on Android 13+ to see the running service and its **Stop** button. You can open the notification controls from **Settings → App → Background work**. Background work supports minimizing and screen lock; removing the app from recents or force-stopping it still interrupts active tasks.
 
 **Share app activity**, under **Settings → App**, sends a limited native activity request while VibeDroid is open. Your Profile sign-in can link this activity to your account. No web page is rendered, and the request sends no chat content or model API key. Server-side analytics determines how activity is recorded and counted.
 
