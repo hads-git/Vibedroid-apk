@@ -74,7 +74,7 @@ For Claude through HadsAI, use **Anthropic Messages** with `https://hadsai.com/v
 
 ## Releases & compatibility
 
-Download the **VibeDroid.apk** asset from [GitHub Releases](https://github.com/hads-git/Vibedroid-apk/releases). Each release includes its installation notes and APK checksum. The download button above always points to the latest standard release.
+Download the **VibeDroid.apk** asset from [GitHub Releases](https://github.com/hads-git/Vibedroid-apk/releases). The download button above always points to the latest standard release. GitHub supplies the APK checksum in the release asset metadata used by the in-app updater.
 
 **From version 0.2.0**, VibeDroid checks GitHub for stable updates while the app is open. A glowing glass banner appears when a newer version is available. Tap **Download**, then **Install update**; Android confirms installation and may ask to allow VibeDroid to install apps. You can also use **Settings → App → Check for updates**. Downloads are checked against the published SHA-256, package version, device compatibility, and the installed app's signing certificate.
 
@@ -84,7 +84,7 @@ Some early builds used different signing certificates. If Android rejects an upd
 
 Conversations and agent history are stored on your device. Model requests use the API provider you configure.
 
-**Background account sync**, under **Settings → App**, lets HadsAI attribute account activity to VibeDroid using your existing Profile sign-in. While enabled and the app is open, it makes a limited native account request without displaying or rendering a web page. This request sends no chat content or model API key. It does not identify users who have not signed into Profile; server-side analytics determines how account activity is counted.
+**Share app activity**, under **Settings → App**, sends a limited native activity request while VibeDroid is open. Your Profile sign-in can link this activity to your account. No web page is rendered, and the request sends no chat content or model API key. Server-side analytics determines how activity is recorded and counted.
 
 ## Follow the project
 
