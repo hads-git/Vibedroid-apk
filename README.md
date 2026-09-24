@@ -40,17 +40,6 @@
 
 VibeDroid brings AI conversations and a coding workspace together in a native Android app. Connect a compatible API provider, work with your project files, and follow delegated agents in their own chats.
 
-### New in 0.2.7
-
-Model, permission-mode and reasoning controls now expand directly inside the composer. API **Auto** selects a compatible protocol where model/server information is available; manual formats remain available for custom setups.
-
-- More reliable Claude streaming, extended-thinking settings and recovery from interrupted replies.
-- Distinct agent colors, rotating activity indicators and clearer task details.
-- Text/code, photo and PDF attachments, plus image previews before and after sending.
-- Cross-chat review notifications, working hyperlinks and improved built-in search.
-
-See the [complete 0.2.7 release notes](https://github.com/hads-git/Vibedroid-apk/releases/tag/v0.2.7). This version also upgrades local 0.2.6 test builds.
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d93bf460-a8f2-469a-b347-74a3cf69f349" width="1200" alt="VibeDroid showing a function plot, a coding conversation with tool results, and delegated agent tasks">
 </p>
@@ -61,12 +50,14 @@ See the [complete 0.2.7 release notes](https://github.com/hads-git/Vibedroid-apk
 | --- | --- |
 | **Chat & history** | Keep conversations in a sidebar, revisit local history, and reopen pending questions with your drafted answers intact. |
 | **Coding workspace** | Browse and edit project files, see the command currently running in the built-in Linux shell, and stop an individual operation. |
-| **Agent chats** | Continue using the main chat while delegated tasks run, follow their separate conversations, and revisit grouped finished agents. Requires a model that supports tools. |
+| **Agent chats** | Delegate tasks, follow each agent's actions through distinct colors and activity indicators, open their separate conversations, and revisit grouped finished work. Requires a model that supports tools. |
+| **Cross-chat requests** | Review pending permissions, questions and plans from other chats; receive background notifications when app notifications are allowed. |
 | **Background work** | Keep active tasks running while the app is minimized or the screen is locked, with an ongoing service notification. |
 | **Math & plots** | Read formatted equations, fractions, code, and supported function plots in the conversation. |
 | **Attachments & images** | Attach text/code, photos and PDFs; preview images before sending and in the chat with fullscreen zoom and pan. PDF previews cover up to the first four pages. |
 | **Models & reasoning** | Expand the composer settings to choose a model, permission mode and supported effort level. API Auto selects a compatible protocol when known; manual Messages, Chat Completions and Responses remain available. |
 | **Permission modes** | Choose Ask, Accept edits, Plan, or YOLO, and switch modes during a task to control how agent actions are approved. |
+| **Web search** | Let the agent search the web and read pages through the app's tools, then open links from its answers and results. |
 | **In-app updates** | Get a glass update banner, download the latest official APK, and install it with Android's confirmation. |
 
 ## Get started
