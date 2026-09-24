@@ -40,6 +40,17 @@
 
 VibeDroid brings AI conversations and a coding workspace together in a native Android app. Connect a compatible API provider, work with your project files, and follow delegated agents in their own chats.
 
+### New in 0.2.7
+
+Model, permission-mode and reasoning controls now expand directly inside the composer. API **Auto** selects a compatible protocol where model/server information is available; manual formats remain available for custom setups.
+
+- More reliable Claude streaming, extended-thinking settings and recovery from interrupted replies.
+- Distinct agent colors, rotating activity indicators and clearer task details.
+- Text/code, photo and PDF attachments, plus image previews before and after sending.
+- Cross-chat review notifications, working hyperlinks and improved built-in search.
+
+See the [complete 0.2.7 release notes](https://github.com/hads-git/Vibedroid-apk/releases/tag/v0.2.7). This version also upgrades local 0.2.6 test builds.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d93bf460-a8f2-469a-b347-74a3cf69f349" width="1200" alt="VibeDroid showing a function plot, a coding conversation with tool results, and delegated agent tasks">
 </p>
@@ -53,8 +64,8 @@ VibeDroid brings AI conversations and a coding workspace together in a native An
 | **Agent chats** | Continue using the main chat while delegated tasks run, follow their separate conversations, and revisit grouped finished agents. Requires a model that supports tools. |
 | **Background work** | Keep active tasks running while the app is minimized or the screen is locked, with an ongoing service notification. |
 | **Math & plots** | Read formatted equations, fractions, code, and supported function plots in the conversation. |
-| **Images** | Open images and screenshots supplied by workspace tools or compatible providers, with fullscreen zoom and pan. |
-| **API choice** | Connect through Anthropic Messages, OpenAI Chat Completions, or Responses with your own Base URL and API key. |
+| **Attachments & images** | Attach text/code, photos and PDFs; preview images before sending and in the chat with fullscreen zoom and pan. PDF previews cover up to the first four pages. |
+| **Models & reasoning** | Expand the composer settings to choose a model, permission mode and supported effort level. API Auto selects a compatible protocol when known; manual Messages, Chat Completions and Responses remain available. |
 | **Permission modes** | Choose Ask, Accept edits, Plan, or YOLO, and switch modes during a task to control how agent actions are approved. |
 | **In-app updates** | Get a glass update banner, download the latest official APK, and install it with Android's confirmation. |
 
@@ -64,12 +75,12 @@ VibeDroid brings AI conversations and a coding workspace together in a native An
 
 1. **Install the APK.** [Download the latest VibeDroid.apk](https://github.com/hads-git/Vibedroid-apk/releases/latest/download/VibeDroid.apk), open it on Android, and allow installation from that source if prompted.
 2. **Prepare your workspace.** Tap **Start** and wait for the included Linux environment to prepare. On **File access**, grant shared-file access or choose **Use app folder**. A separate Termux installation is not required.
-3. **Connect your provider.** Open the sidebar → **Settings** → **API**, choose an **API format**, enter your **Base URL** and **API key**, and tap **Save connection**. HadsAI users can also import a key through **Profile**.
-4. **Restart and chat.** Fully close and reopen VibeDroid. Choose an available model in **Settings → API → Model**, return to **Chat**, and send your first message. Start with **Ask** mode.
+3. **Connect your provider.** Open the sidebar → **Settings** → **API**, leave **API format** on **Auto** (or choose the format required by a custom gateway), enter your **Base URL** and **API key**, and tap **Save connection**. HadsAI users can also import a key through **Profile**.
+4. **Restart and chat.** Fully close and reopen VibeDroid. Open the settings button beside the attachment button in **Chat** to select an available model, effort and permission mode. Start with **Ask** mode.
 
 > **After adding or changing your API key, fully close and reopen the app before sending a request.** `Saved on device` confirms local storage of your settings; a successful reply confirms the API connection.
 
-For Claude through HadsAI, use **Anthropic Messages** with `https://hadsai.com/v1` and your HadsAI API key.
+For Claude through HadsAI, use `https://hadsai.com/v1` and your HadsAI API key. **Auto** selects Messages for known Claude models unless the server declares different support. If you previously saved an incorrect manual format, explicitly select **Auto** again to reset that model's saved route. Manual **Anthropic Messages** remains available.
 
 **[Read the illustrated setup guide →](https://docs.hadsai.com/docs/setup/#vibedroid)**
 
